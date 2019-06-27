@@ -30,7 +30,7 @@
     "angular": "^1.7.5",
     "angular-messages": "^1.7.6",
     "angular-ui-bootstrap": "2.4.0",
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "chart.js": "^2.7.3",
     "core-js": "^2.5.4",
     "css-loader": "^2.1.0",
