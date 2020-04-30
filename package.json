@@ -11,7 +11,9 @@
     "test": "./node_modules/.bin/karma start karma.config.js --single-run true",
     "test:build": "./node_modules/.bin/karma start karma.build.config.js --single-run true",
     "test:watch": "./node_modules/.bin/karma start karma.config.js --auto-watch",
-    "test:watch-chrome": "node_modules/.bin/karma start karma.config.js --browsers Chrome --auto-watch"
+    "test:watch-chrome": "node_modules/.bin/karma start karma.config.js --browsers Chrome --auto-watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -53,7 +55,8 @@
     "style-loader": "^0.23.1",
     "tslib": "^1.10.0",
     "web-animations-js": "^2.3.2",
-    "zone.js": "^0.8.29"
+    "zone.js": "^0.8.29",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.9",
@@ -108,5 +111,6 @@
     "ProjectOpened": [
       "startup"
     ]
-  }
+  },
+  "snyk": true
 }
